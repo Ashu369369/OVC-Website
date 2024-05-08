@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ONE VOICE AlBERTA</title>
 
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONE VOICE AlBERTA</title>
+  <link rel="icon" href="./assets/images/OVC_logo.jpg" />
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="main__navbar">
-          <a class="website_logo" href="index.html"><img src="assets/images/OVC_logo.jpg" alt=""></a>
-          <a class="header__navigation" href="index.html">Home</a>
-          <a class="header__navigation" href="Events.html">Events</a>
-          <a class="header__navigation" href="SupportUs.html">Support Us</a>
-          <a class="header__navigation" href="ContactUs.html">Contact Us</a>
-          <div class="menu" onclick="showSidebar()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="100%"
-              viewBox="0 -960 960 960"
-              width="100%"
-              fill="#0B50AB"
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              />
-            </svg>
-          </div>
-        </div>
-      </nav>
-      <div class="sidebar">
-        <div class="close_menu" onclick="hideSidebar()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            />
-          </svg>
-        </div>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/navbarAndFooter.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="main__navbar">
+        <a class="website_logo" href="index.html"><img src="assets/images/OVC_logo.jpg" alt=""></a>
         <a class="header__navigation" href="index.html">Home</a>
-        <a class="header__navigation" href="Events.html">Events</a>
+        <a class="header__navigation" href="team.html">Team</a>
         <a class="header__navigation" href="SupportUs.html">Support Us</a>
         <a class="header__navigation" href="ContactUs.html">Contact Us</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="left_hero_section">
-          <h1>One Voice Alberta</h1>
-          <p>
-            "Empowering Voices, Transforming Lives: Standing Strong for Those in Need"
-          </p>
+        <div class="menu" onclick="showSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 -960 960 960" width="100%" fill="#0B50AB">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
         </div>
-        <div class="right_hero_section">
-          
-          <a href="ContactUs.html">
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="close_menu" onclick="hideSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </div>
+      <a class="header__navigation" href="index.html">Home</a>
+      <a class="header__navigation" href="team.html">Team</a>
+      <a class="header__navigation" href="SupportUs.html">Support Us</a>
+      <a class="header__navigation" href="ContactUs.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="left_hero_section">
+        <h1>One Voice Alberta</h1>
+        <p>
+          "Empowering Voices, Transforming Lives: Standing Strong for Those in Need"
+        </p>
+      </div>
+      <div class="right_hero_section">
+
+        <a href="ContactUs.html">
           <button>Contact Us</button>
         </a>
-          <!-- <div class="main_image">
+        <!-- <div class="main_image">
             <img
               src="assets/images/OVC_hero_section_image.jpg"
               alt="Group Photo"
             />
           </div> -->
-        </div> 
-      </section>
-   </main>
+      </div>
+    </section>
 
-    <footer>
+    <section class="servicesInfo">
+      <div class="servicesInfoMainHeading">
+        The <b>SERVICES</b> we provide
+      </div>
+      <div class="servicesInfoMainContainer">
+        <div class="servicesInfoContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" height="4rem" viewBox="0 -960 960 960" width="4rem" fill="#e8eaed">
+            <path
+              d="M640-80q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170T640-80Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm-480 0q-33 0-56.5-23.5T80-240v-304q0-8 1.5-16t4.5-16l80-184h-6q-17 0-28.5-11.5T120-800v-40q0-17 11.5-28.5T160-880h280q17 0 28.5 11.5T480-840v40q0 17-11.5 28.5T440-760h-6l66 152q-19 10-36 21t-32 25l-84-198h-96l-92 216v304h170q5 21 13.5 41.5T364-160H160Zm480-440q-42 0-71-29t-29-71q0-42 29-71t71-29v200q0-42 29-71t71-29q42 0 71 29t29 71H640Z" />
+          </svg>
+          <h2>
+            Food Hampers
+          </h2>
+          <p>
+            "At OVC Alberta, we are committed to supporting individuals and families in need within our community.
+            Through
+            our food assistance program, we provide essential nourishment to those facing food insecurity. Our dedicated
+            volunteers work tirelessly to assemble and distribute food hampers filled with nutritious items, ensuring
+            that
+            no one goes hungry. These hampers include staple food items such as grains, canned goods, fresh produce, and
+            other essentials. By offering this vital support, we aim to alleviate hunger and provide a sense of relief
+            to
+            those experiencing financial hardship. Through the generosity of our donors and the dedication of our
+            volunteers, we strive to make a meaningful difference in the lives of those in need."
+          </p>
+        </div>
 
-    </footer>
+        <div class="servicesInfoContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" height="4rem" viewBox="0 -960 960 960" width="4rem" fill="#e8eaed">
+            <path
+              d="M480-320q59 0 127.5-20.5T797-414q2-11 2.5-21.5t.5-21.5q0-11-8.5-18t-19.5-4q-14 5-31 10.5T698-452q-69 29-118 40.5T480-400q-52 0-102-12t-122-41q-26-11-40-16l-28-10q-11-4-19.5 3.5T160-457q0 11 .5 21.5T163-414q101 48 179.5 71T480-320Zm0 160q94 0 167-41t114-110q-88 37-155 54t-126 17q-58 0-129-17.5T198-310q40 69 113.5 109.5T480-160Zm0-400q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-720q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720q0 33 23.5 56.5T480-640Zm0 560q-177 0-288.5-105T80-457q0-52 41.5-83t90.5-15q16 5 33.5 11.5T287-527q64 26 106 36.5t87 10.5q43 0 85-10t103-36q29-11 46.5-18t34.5-12q49-14 90 17t41 82q0 79-31 147.5T764-190q-54 51-127 80.5T480-80Z" />
+            </svg>
+          <h2>Consultation</h2>
+          <p>
+            "We understand that navigating through challenging times can be overwhelming. That's why we offer
+            consultation
+            services tailored to individuals facing various forms of hardship and suffering. Our experienced consultants
+            provide a safe and supportive environment for individuals to express their concerns and explore potential
+            solutions. Whether you're dealing with mental health issues, emotional distress, relationship difficulties,
+            or
+            other personal challenges, our compassionate team is here to listen, offer guidance, and provide practical
+            strategies to help you cope and overcome obstacles. We believe in empowering individuals to regain control
+            over their lives and move towards a brighter future. With our consultation services, you don't have to face
+            your struggles alone."
+          </p>
+        </div>
+        <div class="servicesInfoContainer">
+          <svg xmlns="http://www.w3.org/2000/svg" height="4rem" viewBox="0 -960 960 960" width="4rem" fill="#e8eaed">
+            <path
+              d="M160-200v-15 15-440 440Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm0-80 120-120-28-28-72 72v-164h-40v164l-72-72-28 28 120 120Z" />
+            </svg>
+          <h2>Job Opportunities</h2>
+          <p>
+            "We believe in equipping students with the resources and support they need to succeed beyond the classroom.
+            In
+            addition to our core mission of providing assistance to those in need, we also offer valuable career
+            services
+            to help students transition into the workforce. Through partnerships with local businesses and
+            organizations,
+            we facilitate job placement opportunities, internships, and career development workshops. Our dedicated team
+            works closely with students to identify their strengths, explore career interests, and connect them with
+            potential employers. Whether it's resume writing assistance, interview preparation, or networking
+            opportunities, we are committed to empowering students to pursue their career aspirations and achieve
+            professional success. By bridging the gap between education and employment, we strive to create a brighter
+            future for the next generation."
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script src="js/script.js"></script>
-  </body>
+    <section class="founderInfo">
+      <h2>
+        <b>Founder of ONE VOICE ALBERTA</b>
+      </h2>
+      <div class="founderContainer">
+        <div class="left">
+          <img src="./assets/team/2.jpg" class="founderImg teamPerson" height="100px" width="100px"
+            alt="Founder of OVC" />
+        </div>
+        <div class="right">
+          <div class="founderHeader">
+            <h3 class="founderName">Reyme</h3>
+            <p>Founder of One Voice Alberta</p>
+          </div>
+          <div class="founderBody">
+            <p class="founderText">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              quam sequi repudiandae sunt aperiam veniam corrupti eveniet
+              mollitia qui reiciendis magni, minus odio accusantium officia esse
+              maxime libero cumque reprehenderit nihil. Odio.
+            </p>
+            <p class="founderBodyQuote">
+              Be the change you wish to see in the world
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="teamMembers">
+        <p>Click here to know about all</p>
+        <a href="team.html">
+          <button>Team Members</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="contactUsContainer">
+    <p>Do you want help? Send direct Message to One Voice Alberta</p>
+    <a href="ContactUs.html"><button>Contact Us</button></a>
+  </div>
+  <footer>
+    <a class="website_logo" href="index.html"><img src="assets/images/OVC_logo.jpg" alt=""></a>
+
+    <div class="socialMediaLinks">
+      Facebook <br>
+      instagram <br>
+    </div>
+
+    <div class="contactInfo">
+      e-mail address <br>
+      phone number
+    </div>
+
+    <div class="copyrightInfo">
+      Copyright@kjdsasdkfj
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

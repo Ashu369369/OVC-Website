@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team | One Voice Alberta</title>
     <link rel="icon" href="./assets/images/OVC_logo.jpg" />
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/navbarAndFooter.css">
     <link rel="stylesheet" href="./styles/team.css" />
   </head>
   <body>
+
+    <header>
+      <nav class="navbar">
+        <div class="main__navbar">
+          <a class="website_logo" href="index.html"><img src="assets/images/OVC_logo.jpg" alt=""></a>
+          <a class="header__navigation" href="index.html">Home</a>
+          <a class="header__navigation" href="team.html">Team</a>
+          <a class="header__navigation" href="SupportUs.html">Support Us</a>
+          <a class="header__navigation" href="ContactUs.html">Contact Us</a>
+          <div class="menu" onclick="showSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="100%"
+              viewBox="0 -960 960 960"
+              width="100%"
+              fill="#0B50AB"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <div class="sidebar">
+        <div class="close_menu" onclick="hideSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </div>
+        <a class="header__navigation" href="index.html">Home</a>
+        <a class="header__navigation" href="team.html">Team</a>
+        <a class="header__navigation" href="SupportUs.html">Support Us</a>
+        <a class="header__navigation" href="ContactUs.html">Contact Us</a>
+      </div>
+    </header>
+
     
     <main>
       <!-- founder -->

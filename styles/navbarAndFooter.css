@@ -1,0 +1,153 @@
+/* FONTS */
+/* space grotesk font*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* RobotoSlab */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+/* variables */
+/* :root {
+
+    /* colors 
+    --Greenish: #606c38;
+    --blackish: #283618;
+    --beige: #fefae0;
+    --lightBrown: #dda15e;
+    --brown: #bc6c25;
+} */
+
+header {
+  background: transparent;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.main__navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* height: 3.125rem; */
+  height: 6rem;
+  position: relative;
+}
+
+.main__navbar img, footer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  scale: 1;
+}
+
+.main__navbar a {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  color: #0b50ab;
+  text-decoration: none;
+  margin: 0 25px;
+  font-size: 1.4rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+.main__navbar .website_logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #0b50ab;
+  text-decoration: none;
+  padding: 0 25px 0 0;
+  font-size: 1.5rem;
+  font-family: "Railway";
+  font-weight: 600;
+}
+
+.main__navbar .menu {
+  height: 60%;
+  display: none;
+  align-items: center;
+  padding: 0.5625rem 1.25rem;
+}
+@media (max-width: 450px) {
+  .main__navbar .menu {
+    position: absolute;
+    right: 20px;
+  }
+}
+.main__navbar .header__navigation:hover,
+.main__navbar div:hover {
+  border-bottom: 2px solid #0b50ab;
+}
+
+.main__navbar .website_logo {
+  margin-inline-end: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 15.625rem;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  box-shadow: 3px 3px 2rem 5px rgba(0, 0, 0, 0.603);
+}
+.sidebar div {
+  padding: 0.625rem;
+  width: fit-content;
+}
+.sidebar a {
+  padding: 0.625rem;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.sidebar div:hover,
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+@media (max-width: 850px) {
+  .main__navbar a {
+    display: none;
+  }
+  .main__navbar a:first-child {
+    display: flex;
+  }
+  .main__navbar .menu {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: rgb(77, 77, 77);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+/* footer .socialMediaLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+} */
