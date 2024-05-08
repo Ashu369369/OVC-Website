@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main{
+  padding-top: 20vh;
+  background: #e4e4e4;
+}
+.container {
+  padding: 10vmin;
+}
+img {
+  height: 50px;
+}
+.textCenter {
+  text-align: center;
+}
+
+/* founderDirectorContainer */
+.founderDirectorContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+/* founder container */
+.founderContainer {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 10vmin;
+  display: flex;  
+  padding: 20px;
+  overflow: hidden;
+}
+.founderContainer .left {
+  width: 30%;
+  /* aspect-ratio: 4/5; */
+}
+.founderImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.founderContainer .right {
+  background: #556171;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.founderHeader {
+  padding: 20px;
+}
+.founderName {
+  font-size: 4rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+.founderHeader p {
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  margin-left: 1.3rem;
+  font-weight: 600;
+  color: #bedcff;
+}
+.founderBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-basis: 1;
+  flex-grow: 1;
+  color: #f2feff;
+  background: #556171;
+  padding: 3rem 5rem;
+}
+.founderBodyQuote {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+  text-align: right;
+}
+.founderText {
+  text-align: justify;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #e4e4e4;
+}
+
+/* director */
+.directorContainer {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  color: rgba(220, 220, 220, 0.8);
+  border: 1px solid white;
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.4);
+  flex-basis: 0;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+.directorContainer .top {
+  height: 80%;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.547);
+}
+.directorContainer .top img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  /* aspect-ratio: 5/7; */
+}
+.directorContainer .bottom {
+  height: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.directorContainer .bottom h3 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+}
+.directorContainer .bottom p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: whitesmoke;
+}
+
+/* teamHeading */
+.teamHeading {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  font-size: 72px;
+  color: rgb(157, 157, 255);
+  margin-inline: auto;
+  /* background: -webkit-linear-gradient(rgb(98, 224, 255), #bdf8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.teamHeading::before {
+  content: "Meet Our";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.teamContainer {
+  padding-top: 20vh;
+  background: #e4e4e4;
+}
+
+/* team members */
+.teamMembersContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 30rem 30rem 30rem;
+  gap: 2rem;
+}
+.teamMembersContainer .directorContainer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+/* char Container */
+.charContainer {
+  display: flex;
+  flex-direction: column;
+  background: #e4e4e4;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.4);
+  flex-basis: 0;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+.charContainer .top {
+  height: 80%;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.charContainer .top img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  /* aspect-ratio: 5/7; */
+}
+.charContainer .bottom {
+  height: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* box-shadow: inset 0 0 10px rgb(0, 0, 0, 0.8); */
+}
+.charContainer .bottom h3 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+}
+.charContainer .bottom p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: #002244;
+}
+
+/* 1440px and below */
+@media (max-width: 1440px) {
+  .teamMembersContainer {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    gap: 2rem;
+  }
+  .charContainer .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .founderBody{
+    padding: 2rem;
+    padding-top: 0;
+  }
+  .founderText{
+    overflow-y: scroll;
+  }
+}
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .teamMembersContainer {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 30rem 30rem 30rem 30rem;
+    gap: 2rem;
+  }
+}
+/* 768px and below */
+@media (max-width: 768px) {
+  .container{
+    padding: 5vmin;
+  }
+  .teamMembersContainer {
+    grid-template-columns: auto auto;
+    grid-template-rows: 25rem 25rem 25rem 25rem 25rem 25rem;
+    gap: 1rem;
+  }
+  .charContainer .bottom h3 {
+    font-size: 0.5rem;
+  }
+  .charContainer .bottom p {
+    font-size: 1rem;
+  }
+  .founderHeader h3{
+    font-size: 3rem;
+  }
+  .founderHeader p{
+    font-size: 0.8rem;
+  }
+  .founderText{
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+  .founderBodyQuote{
+    font-size: 1rem;
+  }
+}
+/* 425px and below */
+@media (max-width: 425px) {
+  .teamMembersContainer {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(11, 20rem);
+    gap: 1rem;
+  }
+  .teamMembersContainer .directorContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+  }
+  .directorContainer .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .teamMembersContainer .directorContainer .bottom h3 {
+    font-size: 0.5rem;
+  }
+  .teamMembersContainer .directorContainer .bottom p {
+    font-size: 1rem;
+  }
+  .teamHeading::before{
+    text-wrap: nowrap;
+    top: -0.2rem;
+  }
+  .teamHeading{
+    font-size: 3rem;
+  }
+  .founderContainer{
+    flex-direction: column;
+  }
+  .founderContainer .left{
+    width: 100%;
+    height: 300px;
+  }
+  .founderContainer .right{
+    width: 100%;
+  }
+}
